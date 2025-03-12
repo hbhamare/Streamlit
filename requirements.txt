@@ -3,3 +3,4 @@ torch==2.6.0
 torchvision
 Pillow
 kaggle
+matplotlib==3.10.1

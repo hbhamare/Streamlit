@@ -4,5 +4,4 @@ Pillow
 kaggle
 matplotlib==3.10.1
 torch==2.6.0
-torchvision==0.15.0
-Pillow==9.2.0
+

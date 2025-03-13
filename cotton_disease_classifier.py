@@ -62,7 +62,7 @@ def get_severity(confidence):
         return "Mild"
     elif confidence < 0.8:
         return "Moderate"
-    else:
+    elif confidence > 0.8:
         return "Severe"
 
 def train_model():

@@ -36,9 +36,9 @@ class CottonDiseaseClassifier(nn.Module):
 def get_severity(confidence):
     if confidence < 0.5:
         return "Mild"
-    elif confidence < 0.8:
+    elif 0.5 < confidence < 0.8:
         return "Moderate"
-    else:
+    elif confidence > 0.8:
         return "High"
 
 def download_dataset():

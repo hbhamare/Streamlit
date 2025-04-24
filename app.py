@@ -99,7 +99,6 @@ def main():
             
             # Severity
             if predicted_class != "Healthy":
-                
                 st.write("**Disease Severity:**")
                 if severity == "Mild":
                     st.success(f"🟢 {severity}")

@@ -98,13 +98,15 @@ def main():
             # st.write(f"{confidence:.2%}")
             
             # Severity
-            st.write("**Disease Severity:**")
-            if severity == "Mild":
-                st.success(f"🟢 {severity}")
-            elif severity == "Moderate":
-                st.warning(f"🟡 {severity}")
-            else:
-                st.error(f"🔴 {severity}")
+            if predicted_class != "Healthy":
+                
+                st.write("**Disease Severity:**")
+                if severity == "Mild":
+                    st.success(f"🟢 {severity}")
+                elif severity == "Moderate":
+                    st.warning(f"🟡 {severity}")
+                else:
+                    st.error(f"🔴 {severity}")
             
             # Recommendations
             st.write("### Recommendations")
